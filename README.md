@@ -58,6 +58,17 @@ True is false: false
 True isn't false: true
 ```
 
+Tests return true or false, and can be assigned to variables: 
+
+```ruby
+
+please_work = test "it's true!" do
+  true.is true
+end
+
+puts "YAY" if please_work
+```
+
 ## Misc
 
 I've been reading Metaprogramming Ruby and thought it'd be fun to try this. Turns out it only took a couple minutes to write, and it's fast, to boot! Normally I would just drop the single library file into a project to avoid running through Bundler as a dependency, but it only adds .1ms to my run-time as a gem. I can live with that.

@@ -1,5 +1,5 @@
 module Freeman
-  VERSION = "0.0.2"
+  VERSION = "0.0.3"
 end
 
 module Kernel
@@ -26,5 +26,6 @@ KFTest = Struct.new(:description, :block) do
       line = block.source_location.join(": ")
       puts "  from #{ line }"
     end
+    return status
   end
 end
