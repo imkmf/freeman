@@ -30,8 +30,14 @@ test "Numbers can be divisible by" do
   10.divisible_by(5).is true
 end
 
+# Example of a failing test
 test "True is false" do
   true.is false
+end
+
+# Example of the 'isnt' on the same test
+test "True isn't false" do
+  true.isnt false
 end
 
 # ./core_exts.rb
@@ -49,6 +55,7 @@ A string is indeed a string: true
 Numbers can be divisible by: true
 True is false: false
   from test.rb: 12
+True isn't false: true
 ```
 
 ## Misc
