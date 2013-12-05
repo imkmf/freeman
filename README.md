@@ -23,7 +23,7 @@ require "freeman"
 require "./core_exts"
 
 test "A string is indeed a string" do
-  'This is a string'.class.is String 
+  'This is a string'.class.is String
 end
 
 test "Numbers can be divisible by" do
@@ -58,7 +58,7 @@ True is false: false
 True isn't false: true
 ```
 
-Tests return true or false, and can be assigned to variables: 
+Tests return true or false, and can be assigned to variables:
 
 ```ruby
 
@@ -77,6 +77,7 @@ I've been reading Metaprogramming Ruby and thought it'd be fun to try this. Turn
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+3. Run `rake` to make sure (simple) tests still pass
+4. Commit your changes (`git commit -am 'Add some feature'`)
+5. Push to the branch (`git push origin my-new-feature`)
+6. Create new Pull Request

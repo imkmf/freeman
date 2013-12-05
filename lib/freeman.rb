@@ -20,8 +20,8 @@ end
 
 KFTest = Struct.new(:description, :block) do
   def run
-    status = block.call ? true : false
-    puts "#{ description }: #{ status }"
+    status = block.call ? "✓" : "✗"
+    puts "#{ status } #{ description }"
     if status.is false
       line = block.source_location.join(": ")
       puts "  from #{ line }"
